@@ -1031,6 +1031,27 @@ namespace Projekt3_Plutka62026
                     }
                     kpRysownica.DrawPolygon(kpPióro, kpWierzchołkiWielokąta);
                 }
+
+                if (kprdbRomb.Checked)
+                {
+                    ushort kpStopieńWielokąta = (ushort)kpnumUDLiczbaKątów.Value;
+                    int R = kpSzerokość;
+                    double kpKątPołożeniaPierwszegoWierzchołka = 0.0;
+                    double kpKątMiędzyWierzchołkamiWielokąta = 360.0 / kpStopieńWielokąta;
+                    Point[] kpWierzchołkiWielokąta = new Point[kpStopieńWielokąta];
+                    for (int i = 0; i < kpStopieńWielokąta; i++)
+                    {
+                        kpWierzchołkiWielokąta[i].X = kpLewyGórnyNarożnikX +
+                          (int)(2*R * Math.Cos(Math.PI * (kpKątPołożeniaPierwszegoWierzchołka +
+                            i * kpKątMiędzyWierzchołkamiWielokąta) / 180));
+
+                        kpWierzchołkiWielokąta[i].Y = kpLewyGórnyNarożnikY +
+                          (int)(R * Math.Sin(Math.PI * (kpKątPołożeniaPierwszegoWierzchołka +
+                            i * kpKątMiędzyWierzchołkamiWielokąta) / 180));
+
+                    }
+                    kpRysownica.DrawPolygon(kpPióro, kpWierzchołkiWielokąta);
+                }
                 if (kprdbPółkole.Checked)
                 {
                     //deklaracje uzupełniające

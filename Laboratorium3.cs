@@ -47,12 +47,10 @@ namespace Projekt3_Plutka62026
 
         private void gbWybieranieKrzywych_Enter(object sender, EventArgs e)
         {
-
         }
 
         private void lblX_Click(object sender, EventArgs e)
         {
-
         }
 
         private void pbRysownica_MouseDown(object sender, MouseEventArgs e)
@@ -64,7 +62,6 @@ namespace Projekt3_Plutka62026
             if (e.Button == MouseButtons.Left)
                 //tak, to zapamietamy wspolrzedne polozenia myszy
                 Punkt = e.Location;
-
         }
 
         private void pbRysownica_MouseUp(object sender, MouseEventArgs e)
@@ -157,9 +154,6 @@ namespace Projekt3_Plutka62026
 
                     }
                     //wykreslenie wielokata
-                    //Rysownica.DrawPolygon(Pióro, WierzchołkiWielokąta);
-                    //wykreslenie (wymalowanie) wielokata wypelnionego
-
                     //ustawienie koloru wypelnienia wielokata
                     Pędzel.Color = btnKolorWypełnienia.BackColor;
                     Rysownica.FillPolygon(Pędzel, WierzchołkiWielokąta);
@@ -187,27 +181,7 @@ namespace Projekt3_Plutka62026
                     WykreślTrójkątSierpińskkiego(Rysownica, PoziomRekurencji, KolorWypełnienia, WierzchołekGórny, WierzchołekLewyDolny, WierzchołekPrawyDolny);
 
                 }
-                //if (rdbDywanSierpińskiego.Checked)
-                //{
-                //    //deklaracje pomocnicze i pobranie danych z formularza
-                //    int PoziomRekurencji = (int)numUDPoziomRekurencji.Value;
-                //    Color KolorWypełnienia = btnKolorWypełnienia.BackColor;
-                //    //wyznaczenie wspolrzednych wierzh=cholkow trojkata (tego najweikszego)
-                //    Point WierzchołekGórny = new Point(
-                //        LewyGórnyNarożnikX + Szerokość / 2,
-                //        LewyGórnyNarożnikY);
-
-                //    Point WierzchołekLewyDolny = new Point(
-                //        LewyGórnyNarożnikX,
-                //        LewyGórnyNarożnikY + Wysokość);
-
-                //    Point WierzchołekPrawyDolny = new Point(
-                //        LewyGórnyNarożnikX + Szerokość,
-                //        LewyGórnyNarożnikY + Wysokość);
-                //    //wywolanie rekurencyjnej metody kreslenia trojkata sierpinskiego
-                //    WykreślTrójkątSierpińskkiego(Rysownica, PoziomRekurencji, KolorWypełnienia, WierzchołekGórny, WierzchołekLewyDolny, WierzchołekPrawyDolny);
-
-                //}
+                
             }
             //odswiezenie powierzchnia graficznej w kontrolce PictureBox
             pbRysownica.Refresh();

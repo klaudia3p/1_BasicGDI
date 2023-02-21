@@ -30,6 +30,7 @@
         {
             this.kppbRysownica = new System.Windows.Forms.PictureBox();
             this.kpgrbWybieranieKrzywych = new System.Windows.Forms.GroupBox();
+            this.kprdbRomb = new System.Windows.Forms.RadioButton();
             this.kprdbKrzyweLejkowatej = new System.Windows.Forms.RadioButton();
             this.kprdbPółkole = new System.Windows.Forms.RadioButton();
             this.kprdbTrapez = new System.Windows.Forms.RadioButton();
@@ -47,7 +48,6 @@
             this.kprdbWypełnionaZamkniętaKrzywaKardynalna = new System.Windows.Forms.RadioButton();
             this.kprdbZamkniętaKrzywaKardynalna = new System.Windows.Forms.RadioButton();
             this.kprdbKrzywaKardynalna = new System.Windows.Forms.RadioButton();
-            this.kprdbSklejanaKrzywaBeziera = new System.Windows.Forms.RadioButton();
             this.kprdbKrzywaBeziera = new System.Windows.Forms.RadioButton();
             this.kprdbOkrąg = new System.Windows.Forms.RadioButton();
             this.kprdbElipsa = new System.Windows.Forms.RadioButton();
@@ -96,7 +96,6 @@
             this.roundToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.czcionkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kolorCzcionkiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kprdbRomb = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.kppbRysownica)).BeginInit();
             this.kpgrbWybieranieKrzywych.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kpnumUDLiczbaKątów)).BeginInit();
@@ -136,7 +135,6 @@
             this.kpgrbWybieranieKrzywych.Controls.Add(this.kprdbWypełnionaZamkniętaKrzywaKardynalna);
             this.kpgrbWybieranieKrzywych.Controls.Add(this.kprdbZamkniętaKrzywaKardynalna);
             this.kpgrbWybieranieKrzywych.Controls.Add(this.kprdbKrzywaKardynalna);
-            this.kpgrbWybieranieKrzywych.Controls.Add(this.kprdbSklejanaKrzywaBeziera);
             this.kpgrbWybieranieKrzywych.Controls.Add(this.kprdbKrzywaBeziera);
             this.kpgrbWybieranieKrzywych.Controls.Add(this.kprdbOkrąg);
             this.kpgrbWybieranieKrzywych.Controls.Add(this.kprdbElipsa);
@@ -150,10 +148,21 @@
             this.kpgrbWybieranieKrzywych.TabStop = false;
             this.kpgrbWybieranieKrzywych.Text = "Wybieranie Krzywych";
             // 
+            // kprdbRomb
+            // 
+            this.kprdbRomb.AutoSize = true;
+            this.kprdbRomb.Location = new System.Drawing.Point(6, 494);
+            this.kprdbRomb.Name = "kprdbRomb";
+            this.kprdbRomb.Size = new System.Drawing.Size(52, 18);
+            this.kprdbRomb.TabIndex = 24;
+            this.kprdbRomb.TabStop = true;
+            this.kprdbRomb.Text = "Romb";
+            this.kprdbRomb.UseVisualStyleBackColor = true;
+            // 
             // kprdbKrzyweLejkowatej
             // 
             this.kprdbKrzyweLejkowatej.AutoSize = true;
-            this.kprdbKrzyweLejkowatej.Location = new System.Drawing.Point(6, 500);
+            this.kprdbKrzyweLejkowatej.Location = new System.Drawing.Point(6, 470);
             this.kprdbKrzyweLejkowatej.Name = "kprdbKrzyweLejkowatej";
             this.kprdbKrzyweLejkowatej.Size = new System.Drawing.Size(114, 18);
             this.kprdbKrzyweLejkowatej.TabIndex = 23;
@@ -164,7 +173,7 @@
             // kprdbPółkole
             // 
             this.kprdbPółkole.AutoSize = true;
-            this.kprdbPółkole.Location = new System.Drawing.Point(7, 474);
+            this.kprdbPółkole.Location = new System.Drawing.Point(6, 446);
             this.kprdbPółkole.Name = "kprdbPółkole";
             this.kprdbPółkole.Size = new System.Drawing.Size(61, 18);
             this.kprdbPółkole.TabIndex = 22;
@@ -175,7 +184,7 @@
             // kprdbTrapez
             // 
             this.kprdbTrapez.AutoSize = true;
-            this.kprdbTrapez.Location = new System.Drawing.Point(7, 449);
+            this.kprdbTrapez.Location = new System.Drawing.Point(7, 422);
             this.kprdbTrapez.Name = "kprdbTrapez";
             this.kprdbTrapez.Size = new System.Drawing.Size(58, 18);
             this.kprdbTrapez.TabIndex = 21;
@@ -196,7 +205,7 @@
             // 
             // kpnumUDLiczbaKątów
             // 
-            this.kpnumUDLiczbaKątów.Location = new System.Drawing.Point(199, 140);
+            this.kpnumUDLiczbaKątów.Location = new System.Drawing.Point(211, 153);
             this.kpnumUDLiczbaKątów.Maximum = new decimal(new int[] {
             4,
             0,
@@ -268,7 +277,7 @@
             // kprdbWypełnionyWycinekElipsy
             // 
             this.kprdbWypełnionyWycinekElipsy.AutoSize = true;
-            this.kprdbWypełnionyWycinekElipsy.Location = new System.Drawing.Point(6, 398);
+            this.kprdbWypełnionyWycinekElipsy.Location = new System.Drawing.Point(7, 381);
             this.kprdbWypełnionyWycinekElipsy.Name = "kprdbWypełnionyWycinekElipsy";
             this.kprdbWypełnionyWycinekElipsy.Size = new System.Drawing.Size(158, 18);
             this.kprdbWypełnionyWycinekElipsy.TabIndex = 13;
@@ -280,7 +289,7 @@
             // kprdbWypełnionyObramowanyWycinekElipsy
             // 
             this.kprdbWypełnionyObramowanyWycinekElipsy.AutoSize = true;
-            this.kprdbWypełnionyObramowanyWycinekElipsy.Location = new System.Drawing.Point(6, 360);
+            this.kprdbWypełnionyObramowanyWycinekElipsy.Location = new System.Drawing.Point(7, 343);
             this.kprdbWypełnionyObramowanyWycinekElipsy.Name = "kprdbWypełnionyObramowanyWycinekElipsy";
             this.kprdbWypełnionyObramowanyWycinekElipsy.Size = new System.Drawing.Size(150, 32);
             this.kprdbWypełnionyObramowanyWycinekElipsy.TabIndex = 12;
@@ -292,7 +301,7 @@
             // kprdbWycinekElipsy
             // 
             this.kprdbWycinekElipsy.AutoSize = true;
-            this.kprdbWycinekElipsy.Location = new System.Drawing.Point(6, 336);
+            this.kprdbWycinekElipsy.Location = new System.Drawing.Point(7, 319);
             this.kprdbWycinekElipsy.Name = "kprdbWycinekElipsy";
             this.kprdbWycinekElipsy.Size = new System.Drawing.Size(98, 18);
             this.kprdbWycinekElipsy.TabIndex = 11;
@@ -303,7 +312,7 @@
             // kprdbŁukElipsy
             // 
             this.kprdbŁukElipsy.AutoSize = true;
-            this.kprdbŁukElipsy.Location = new System.Drawing.Point(6, 312);
+            this.kprdbŁukElipsy.Location = new System.Drawing.Point(7, 295);
             this.kprdbŁukElipsy.Name = "kprdbŁukElipsy";
             this.kprdbŁukElipsy.Size = new System.Drawing.Size(129, 18);
             this.kprdbŁukElipsy.TabIndex = 10;
@@ -314,7 +323,7 @@
             // kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna
             // 
             this.kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna.AutoSize = true;
-            this.kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna.Location = new System.Drawing.Point(6, 274);
+            this.kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna.Location = new System.Drawing.Point(7, 257);
             this.kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna.Name = "kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna";
             this.kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna.Size = new System.Drawing.Size(181, 32);
             this.kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna.TabIndex = 9;
@@ -326,7 +335,7 @@
             // kprdbWypełnionaZamkniętaKrzywaKardynalna
             // 
             this.kprdbWypełnionaZamkniętaKrzywaKardynalna.AutoSize = true;
-            this.kprdbWypełnionaZamkniętaKrzywaKardynalna.Location = new System.Drawing.Point(6, 236);
+            this.kprdbWypełnionaZamkniętaKrzywaKardynalna.Location = new System.Drawing.Point(6, 219);
             this.kprdbWypełnionaZamkniętaKrzywaKardynalna.Name = "kprdbWypełnionaZamkniętaKrzywaKardynalna";
             this.kprdbWypełnionaZamkniętaKrzywaKardynalna.Size = new System.Drawing.Size(140, 32);
             this.kprdbWypełnionaZamkniętaKrzywaKardynalna.TabIndex = 8;
@@ -338,7 +347,7 @@
             // kprdbZamkniętaKrzywaKardynalna
             // 
             this.kprdbZamkniętaKrzywaKardynalna.AutoSize = true;
-            this.kprdbZamkniętaKrzywaKardynalna.Location = new System.Drawing.Point(6, 212);
+            this.kprdbZamkniętaKrzywaKardynalna.Location = new System.Drawing.Point(7, 195);
             this.kprdbZamkniętaKrzywaKardynalna.Name = "kprdbZamkniętaKrzywaKardynalna";
             this.kprdbZamkniętaKrzywaKardynalna.Size = new System.Drawing.Size(169, 18);
             this.kprdbZamkniętaKrzywaKardynalna.TabIndex = 7;
@@ -350,25 +359,13 @@
             // kprdbKrzywaKardynalna
             // 
             this.kprdbKrzywaKardynalna.AutoSize = true;
-            this.kprdbKrzywaKardynalna.Location = new System.Drawing.Point(6, 188);
+            this.kprdbKrzywaKardynalna.Location = new System.Drawing.Point(7, 164);
             this.kprdbKrzywaKardynalna.Name = "kprdbKrzywaKardynalna";
             this.kprdbKrzywaKardynalna.Size = new System.Drawing.Size(116, 18);
             this.kprdbKrzywaKardynalna.TabIndex = 6;
             this.kprdbKrzywaKardynalna.TabStop = true;
             this.kprdbKrzywaKardynalna.Text = "Krzywa Kardynalna";
             this.kprdbKrzywaKardynalna.UseVisualStyleBackColor = true;
-            // 
-            // kprdbSklejanaKrzywaBeziera
-            // 
-            this.kprdbSklejanaKrzywaBeziera.AutoSize = true;
-            this.kprdbSklejanaKrzywaBeziera.Location = new System.Drawing.Point(6, 164);
-            this.kprdbSklejanaKrzywaBeziera.Name = "kprdbSklejanaKrzywaBeziera";
-            this.kprdbSklejanaKrzywaBeziera.Size = new System.Drawing.Size(138, 18);
-            this.kprdbSklejanaKrzywaBeziera.TabIndex = 5;
-            this.kprdbSklejanaKrzywaBeziera.TabStop = true;
-            this.kprdbSklejanaKrzywaBeziera.Text = "Sklejana Krzywa Beziera";
-            this.kprdbSklejanaKrzywaBeziera.UseVisualStyleBackColor = true;
-            this.kprdbSklejanaKrzywaBeziera.CheckedChanged += new System.EventHandler(this.kprdbSklejanaKrzywaBeziera_CheckedChanged);
             // 
             // kprdbKrzywaBeziera
             // 
@@ -792,17 +789,6 @@
             this.kolorCzcionkiToolStripMenuItem.Text = "Krój i rozmiar czcionki";
             this.kolorCzcionkiToolStripMenuItem.Click += new System.EventHandler(this.kolorCzcionkiToolStripMenuItem_Click);
             // 
-            // kprdbRomb
-            // 
-            this.kprdbRomb.AutoSize = true;
-            this.kprdbRomb.Location = new System.Drawing.Point(6, 524);
-            this.kprdbRomb.Name = "kprdbRomb";
-            this.kprdbRomb.Size = new System.Drawing.Size(52, 18);
-            this.kprdbRomb.TabIndex = 24;
-            this.kprdbRomb.TabStop = true;
-            this.kprdbRomb.Text = "Romb";
-            this.kprdbRomb.UseVisualStyleBackColor = true;
-            // 
             // ProjektIndywidualny3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -853,7 +839,6 @@
         private System.Windows.Forms.RadioButton kprdbWypełnionaZamkniętaKrzywaKardynalna;
         private System.Windows.Forms.RadioButton kprdbZamkniętaKrzywaKardynalna;
         private System.Windows.Forms.RadioButton kprdbKrzywaKardynalna;
-        private System.Windows.Forms.RadioButton kprdbSklejanaKrzywaBeziera;
         private System.Windows.Forms.RadioButton kprdbKrzywaBeziera;
         private System.Windows.Forms.RadioButton kprdbOkrąg;
         private System.Windows.Forms.RadioButton kprdbElipsa;

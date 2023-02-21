@@ -295,253 +295,8 @@ namespace Projekt3_Plutka62026
                             kpgrbWybieranieKrzywych.Enabled = true;
                         }
                     }
-
-
                 }
-                if (kprdbSklejanaKrzywaBeziera.Checked)
-
-                {
-
-                    if (kpgrbWybieranieKrzywych.Enabled)
-
-                    {
-
-                        kpgrbWybieranieKrzywych.Enabled = false;
-
-                        kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego = 0;
-
-                        kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego = 4;
-
-                        kpSklejanaKrzywaBeziera.kpPunktP0 = e.Location;
-
-
-
-                        using (SolidBrush kpPędzel = new SolidBrush(Color.Black))
-
-                        {
-
-                            kpRysownica.FillEllipse(kpPędzel,
-
-                                e.Location.X - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                e.Location.Y - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego);
-
-                            kpRysownica.DrawString("p" + kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego.ToString(),
-
-                                FontOpisuPunktów, kpPędzel, e.Location);
-
-                        }
-
-                    }
-
-                    else
-
-                    {
-
-                        kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego++;
-
-                        switch (kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego)
-
-                        {
-
-                            case 1: kpSklejanaKrzywaBeziera.kpPunktP1 = e.Location; break;
-
-                            case 2: kpSklejanaKrzywaBeziera.kpPunktP2 = e.Location; break;
-
-                            case 3: kpSklejanaKrzywaBeziera.kpPunktP3 = e.Location; break;
-
-                        }
-
-                        if (kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego < 3)
-
-                        {
-
-                            using (SolidBrush kpPędzel = new SolidBrush(Color.Red))
-
-                            {
-
-                                kpRysownica.FillEllipse(kpPędzel,
-
-                                 e.Location.X - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                e.Location.Y - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego);
-
-                                kpRysownica.DrawString("p" + kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego.ToString(),
-
-                                    FontOpisuPunktów, kpPędzel, e.Location);
-
-                            }
-
-                        }
-
-                        else
-
-                        {
-
-                            using (SolidBrush kpPędzel = new SolidBrush(Color.Black))
-
-                            {
-
-                                kpRysownica.FillEllipse(kpPędzel,
-
-                                 e.Location.X - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                e.Location.Y - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego);
-
-                                kpRysownica.DrawString("p" + kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego.ToString(),
-
-                                    FontOpisuPunktów, kpPędzel, e.Location);
-
-                            }
-
-                            kpRysownica.DrawBezier(kpPióro,
-
-                                kpSklejanaKrzywaBeziera.kpPunktP0,
-
-                                kpSklejanaKrzywaBeziera.kpPunktP1,
-
-                                kpSklejanaKrzywaBeziera.kpPunktP2,
-
-                                kpSklejanaKrzywaBeziera.kpPunktP3);
-
-                            if (kpgrbWybieranieKrzywych.Enabled)
-
-                            {
-
-
-
-                                kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego = 3;
-
-                                kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego = 4;
-
-                                kpSklejanaKrzywaBeziera.kpPunktP3 = e.Location;
-
-
-
-                                using (SolidBrush kpPędzel = new SolidBrush(Color.Black))
-
-                                {
-
-                                    kpRysownica.FillEllipse(kpPędzel,
-
-                                        e.Location.X - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        e.Location.Y - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego);
-
-                                    kpRysownica.DrawString("p" + kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego.ToString(),
-
-                                        FontOpisuPunktów, kpPędzel, e.Location);
-
-                                }
-
-                            }
-
-                            else
-
-                            {
-
-                                kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego++;
-
-                                switch (kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego)
-
-                                {
-
-                                    case 1: kpSklejanaKrzywaBeziera.kpPunktP4 = e.Location; break;
-
-                                    case 2: kpSklejanaKrzywaBeziera.kpPunktP5 = e.Location; break;
-
-                                    case 3: kpSklejanaKrzywaBeziera.kpPunktP6 = e.Location; break;
-
-                                }
-
-                                if (kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego < 3)
-
-                                {
-
-                                    using (SolidBrush kpPędzel = new SolidBrush(Color.Red))
-
-                                    {
-
-                                        kpRysownica.FillEllipse(kpPędzel,
-
-                                         e.Location.X - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        e.Location.Y - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego);
-
-                                        kpRysownica.DrawString("p" + kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego.ToString(),
-
-                                            FontOpisuPunktów, kpPędzel, e.Location);
-
-                                    }
-
-                                }
-
-                                else
-
-                                {
-
-                                    using (SolidBrush kpPędzel = new SolidBrush(Color.Black))
-
-                                    {
-
-                                        kpRysownica.FillEllipse(kpPędzel,
-
-                                         e.Location.X - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        e.Location.Y - kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego,
-
-                                        2 * kpSklejanaKrzywaBeziera.kpPromieńPunktuKontrolnego);
-
-                                        kpRysownica.DrawString("p" + kpSklejanaKrzywaBeziera.kpNumerPunktuKontrolnego.ToString(),
-
-                                            FontOpisuPunktów, kpPędzel, e.Location);
-
-                                    }
-
-                                    kpRysownica.DrawBezier(kpPióro,
-
-                                        kpSklejanaKrzywaBeziera.kpPunktP3,
-
-                                        kpSklejanaKrzywaBeziera.kpPunktP4,
-
-                                        kpSklejanaKrzywaBeziera.kpPunktP5,
-
-                                        kpSklejanaKrzywaBeziera.kpPunktP6);
-
-                                    kpgrbWybieranieKrzywych.Enabled = true;
-
-                                }
-
-                            }
-
-                        }
-
-                    }
-
-
-                }
+                
                 if (kprdbKrzyweLejkowatej.Checked)
                 {
 
@@ -663,10 +418,7 @@ namespace Projekt3_Plutka62026
                                 }
                                 kpgrbWybieranieKrzywych.Enabled = true;
                             }
-                            
                         }
-
-                       
                     }
                    
 
@@ -736,7 +488,6 @@ namespace Projekt3_Plutka62026
                             kpRysownica.DrawCurve(kpPióro, points, 1.0f);
                             kpgrbWybieranieKrzywych.Enabled = true;
                         }
-                        
                     }
                     
 
@@ -806,7 +557,6 @@ namespace Projekt3_Plutka62026
                             kpRysownica.DrawClosedCurve(kpPióro, points);
                             kpgrbWybieranieKrzywych.Enabled = true;
                         }
-
                     }
 
 
@@ -877,10 +627,7 @@ namespace Projekt3_Plutka62026
                             kpRysownica.FillClosedCurve(kpPędzel, points);
                             kpgrbWybieranieKrzywych.Enabled = true;
                         }
-
                     }
-
-
                 }
 
                 if (kprdbWypełnionaObramowanaZamknietaKrzywaKardynalna.Checked)
@@ -950,10 +697,7 @@ namespace Projekt3_Plutka62026
                             kpRysownica.DrawClosedCurve(kpPióro, points);
                             kpgrbWybieranieKrzywych.Enabled = true;
                         }
-
                     }
-
-
                 }
 
                 if (kprdbŁukElipsy.Checked)
@@ -1074,8 +818,6 @@ namespace Projekt3_Plutka62026
                     //wykreslenie prostokąta
                     kpRysownica.DrawPolygon(kpPióro, kpWierzchołkiWielokąta);
                 }
-                
-
             }               
             kppbRysownica.Refresh();
         }
@@ -1084,8 +826,6 @@ namespace Projekt3_Plutka62026
         {
             
         }
-
-
 
 
         private void kprdbZamkniętaKrzywaKardynalna_CheckedChanged(object sender, EventArgs e)
